@@ -1,0 +1,18 @@
+[package]
+name = "riverbed"
+version = "0.1.0"
+edition = "2021"
+description = "An in-memory publish/subscribe message broker in Rust with bounded per-subscriber queues."
+authors = ["Pavan Nallamothu"]
+license = "MIT"
+
+[[bin]]
+name = "riverbed"
+path = "src/main.rs"
+
+[lib]
+name = "riverbed"
+path = "src/lib.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
