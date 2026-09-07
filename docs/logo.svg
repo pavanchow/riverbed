@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Riverbed logo">
+  <defs>
+    <linearGradient id="rb-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0aa07d"/>
+      <stop offset="1" stop-color="#2ec59e"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="124" height="124" rx="28" fill="url(#rb-g)"/>
+  <g stroke="#ffffff" stroke-width="4.5" fill="none" stroke-linecap="round">
+    <path d="M33 64 L58 44"/>
+    <path d="M35 64 L58 64"/>
+    <path d="M33 64 L58 84"/>
+  </g>
+  <circle cx="26" cy="64" r="8" fill="#ffffff"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3.5">
+    <rect x="58" y="35" width="46" height="16" rx="4"/>
+    <rect x="58" y="56" width="46" height="16" rx="4"/>
+    <rect x="58" y="77" width="46" height="16" rx="4"/>
+  </g>
+  <g fill="#ffffff">
+    <rect x="63" y="39.5" width="8" height="8" rx="1.5"/>
+    <rect x="74" y="39.5" width="8" height="8" rx="1.5"/>
+    <rect x="63" y="60.5" width="8" height="8" rx="1.5"/>
+    <rect x="74" y="60.5" width="8" height="8" rx="1.5"/>
+    <rect x="85" y="60.5" width="8" height="8" rx="1.5"/>
+    <rect x="63" y="81.5" width="8" height="8" rx="1.5"/>
+  </g>
+</svg>

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Riverbed: a message broker in Rust</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
 <meta name="description" content="Riverbed is a message broker in Rust with topics, wildcard subscriptions, and bounded per-subscriber queues, so a slow subscriber never grows memory without bound.">
 <meta name="author" content="Pavan Nallamothu (pavanchow)">
 <link rel="canonical" href="https://pavanchow.github.io/riverbed/">
@@ -135,6 +136,7 @@
   </div></nav>
 
   <div class="hero">
+    <img src="logo.svg" alt="Riverbed logo" width="72" height="72" style="display:block;margin:0 auto 18px">
     <p class="eyebrow">Rust · topics · bounded queues</p>
     <h1>Publish once,<br>see every queue react.</h1>
     <p class="sub">Riverbed is a message broker in Rust that delivers to every subscriber of a topic, matches wildcards like <code>logs.*</code>, and bounds every subscriber's queue so a slow one can never grow memory without limit. This is the real broker logic, running in your browser.</p>
@@ -162,6 +164,16 @@
       <p class="caption">bounded queues, depth 8 each · drop-oldest policy · toggle "slow" on a subscriber, stop draining it, then publish to watch it fill and drop</p>
     </div>
   </div>
+
+  <section>
+    <details style="border:1px solid var(--line,#e2e2e6);border-radius:14px;padding:16px 22px;background:var(--accent-soft)">
+      <summary style="cursor:pointer;font-weight:600">How to use this playground</summary>
+      <div style="margin-top:12px">
+        <p>Type a <b>topic</b> (like <code>logs.error</code>) or click one of the topic chips, then press <b>Publish</b>. The message is delivered to every subscriber whose pattern matches, and each subscriber's queue and delivered count update live.</p>
+        <p style="margin-top:10px">Use <b>+ subscriber</b> to add one with its own pattern (wildcards like <code>logs.*</code> match a single segment). Toggle a subscriber to <b>slow</b> and stop draining it, then keep publishing to watch its bounded queue fill to depth 8 and start dropping the oldest messages, while the other subscribers keep up.</p>
+      </div>
+    </details>
+  </section>
 
   <section id="how">
     <h2>How it works</h2>

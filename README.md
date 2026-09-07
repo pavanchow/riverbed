@@ -1,3 +1,5 @@
+<img src="docs/logo.svg" alt="Riverbed logo" width="96">
+
 # Riverbed
 
 **A message broker in Rust you can read end to end, with bounded queues so a slow subscriber never grows the broker's memory without limit.**
