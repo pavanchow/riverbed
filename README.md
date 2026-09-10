@@ -6,6 +6,8 @@ Riverbed is a from-scratch in-memory publish/subscribe message broker written in
 
 **[Live demo](https://pavanchow.github.io/riverbed/)** · MIT licensed · written in Rust
 
+Built from scratch by [Pavan Nallamothu](https://pavanchow.github.io/) ([LinkedIn](https://www.linkedin.com/in/pavanchow/), [GitHub](https://github.com/pavanchow)).
+
 ## What it is
 
 - **Topics and subscribers.** Publish a message to a topic and it is delivered to every current subscriber of that topic.
